@@ -31,7 +31,7 @@ function desencriptar() {
     var txtCifrado = txtCifrado.replace(/ober/igm, "o");
     var txtCifrado = txtCifrado.replace(/imes/igm, "i");
     var txtCifrado = txtCifrado.replace(/ai/igm, "a");
-    var txtCifrado = txtCifrado.replace(/ufar/igm, "u");
+    var txtCifrado = txtCifrado.replace(/ufat/igm, "u");
 
     document.getElementById("sinmensaje").style.display = "none";
     document.getElementById("texto1").style.display = "none";
