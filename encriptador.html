@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1><a href="https://www.aluracursos.com/"><img class="logo" src="Vector.svg" alt="logo"></a></h1>
+        </header>
+        <main>
+            <div class="input">
+                <textarea name="input" id="inputText" cols="30" rows="10" placeholder="Ingrese texto aquí"></textarea>
+                <div class="botones">
+                    <p class="restriccion"><span>!</span> Solo minúsculas y sin acentos</p>
+                    <button class="encriptar" id="encriptar_id" onclick="encriptar()">Encriptar</button>
+                    <button class="desencriptar" id="desencriptar_id" onclick="desencriptar()">Desencriptar</button>
+                </div>
+            </div>
+            <div class="encriptacion">
+                <img src="ningunmensaje.png" alt="sin mensaje" class="sinmensaje" id="sinmensaje">
+                <p class="texto1" id="texto1">Ningún mensaje fue encontrado</p>
+                <textarea name="texto2" class="texto2" id="texto2" cols="30" rows="2" readonly>Ingrese el texto que desees encriptar o desencriptar</textarea>
+                <button class="copy" type="button" id="copiar" onclick="copy()">Copiar</button>
+            </div>
+            <div class="flecha">
+                <p class="flecha"><a href="#footer" class="flecha-boton">&#129123;</a></p>
+            </div>
+        </main>
+        <footer id="footer">
+            <p class="copyright">
+                <a href="https://www.linkedin.com/in/thiagoep/"><img src="logolinkedin.png" alt="linkedin" class="linkedin"></a>
+                <a href="https://github.com/thiagoep/"><img src="logogithub.png" alt="github" class="github"><br></a>
+                &copy 2023 by Thiago Perez powered by Alura
+            </p>
+        </footer>
+    </body>
+</html>
